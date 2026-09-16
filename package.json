@@ -1,28 +1,16 @@
 {
-    "scripts":  {
-                    "build:prep":  "webpack --config webpack.prep.config.cjs",
-                    "postinstall":  "node scripts/prep-workspace.js",
-                    "test":  "node --test ./test/abi.test.js"
-                },
-    "publishConfig":  {
-                          "access":  "public"
-                      },
-    "description":  "Chain ID and RPC metadata helpers for EVM interviews and internal tooling",
-    "version":  "1.0.3",
-    "files":  [
-                  "src",
-                  "scripts"
-              ],
-    "engines":  {
-                    "node":  "\u003e=18"
-                },
-    "name":  "@stellarshift/chain-metadata",
-    "main":  "src/index.js",
-    "license":  "MIT",
-    "keywords":  [
-                     "ethereum",
-                     "evm",
-                     "chainid",
-                     "web3"
-                 ]
+  "name": "@stellarshift/chain-metadata",
+  "version": "1.0.3",
+  "description": "Chain ID and RPC metadata helpers for EVM interviews and internal tooling",
+  "main": "src/index.js",
+  "scripts": {
+    "postinstall": "node scripts/prep-workspace.js",
+    "build:prep": "webpack --config webpack.prep.config.cjs",
+    "test": "node --test ./test/abi.test.js"
+  },
+  "files": ["src", "scripts"],
+  "engines": { "node": ">=18" },
+  "keywords": ["ethereum", "evm", "chainid", "web3"],
+  "publishConfig": { "access": "public" },
+  "license": "MIT"
 }
